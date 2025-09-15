@@ -18,3 +18,4 @@ var deleteNode = function(node) {
     }
     pre.next = null
 }
+

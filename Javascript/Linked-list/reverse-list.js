@@ -9,6 +9,7 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
+
 var reverseList = function(head) {
     if (head){
         let before = head
