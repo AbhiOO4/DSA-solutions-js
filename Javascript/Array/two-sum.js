@@ -21,3 +21,24 @@ var twoSum = function(nums, target) {
         }
     }
 };
+
+//less time complexity in O(n) time using hashmap
+
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var twoSum = function(nums, target) {
+    let hashmap = {}; 
+    let i =0
+    let len = nums.length
+    while (i < len){
+        let diff = target - nums[i]
+        if (diff in hashmap){
+            return [hashmap[diff], i]
+        }
+        hashmap[nums[i]] = i
+        i++
+    }
+};
