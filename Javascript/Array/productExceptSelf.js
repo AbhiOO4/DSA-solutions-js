@@ -9,9 +9,7 @@ var productExceptSelf = function(nums) {
         i++
     }
     let post = 1
-    console.log(res)
     while ( r >= 0 ){
-        console.log(post)
         res[r] = res[r] * post
         post = post * nums[r]
         r--
@@ -19,6 +17,3 @@ var productExceptSelf = function(nums) {
     return res
 };
 
-nums = [1,2,3,4]
-
-console.log(productExceptSelf(nums))
